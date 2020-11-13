@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Form Page" />
+    <title>Form Page</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Personal information</legend>
+      <form>
+        <!--Name-->
+        <label>Name</label>
+        <input
+          type="text"
+          maxlength="16"
+          placeholder="Full Name"
+          autocomplete="on"
+          required
+          autofocus
+        />
+        <br /><br />
+        <!--Age-->
+        <label>Enter age</label>
+        <input type="number" 
+        placeholder="Age"
+        autocomplete="on"
+        required
+        />
+        <br /><br />
+        <!--Kind-->
+        <label>Male</label>
+        <input type="radio" name="kind" />
+        <label>Female</label>
+        <input type="radio" name="kind" />
+        <br /><br />
+        <!--Email-->
+        <label>Email</label>
+        <input type="email" readonly value="someone@gmail.com" 
+        placeholder="Email"
+        autocomplete="on"
+        required
+        />
+        <br /><br />
+        <!--Password-->
+        <label>Password</label>
+        <input type="password" 
+        placeholder="Password"
+        required
+        /><br><br>
+        <label>Location</label>
+        <input list="lang">
+        <datalist id="lang">
+            <option>Egypt</option>
+            <option>Sudan</option>
+            <option>Libya</option>
+            <option>China</option>
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>USA</option>
+            <option>Canada</option>
+            <option>Mexico</option>
+        </datalist>
+        <br /><br />
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Course Info</legend>
+      <form>
+        <!--One course pick-->
+        <label>CSS</label>
+        <input type="radio" name="course" />
+        <label>HTML</label>
+        <input type="radio" name="course" />
+        <br /><br />
+        <!--1,2,3-->
+        <label>1</label>
+        <input type="checkbox" />
+        <label>2</label>
+        <input type="checkbox" />
+        <label>3</label>
+        <input type="checkbox" /><br /><br />
+        <!--Color-->
+        <label>Choose color</label>
+        <input type="color" /><br /><br />
+        <!--Date-->
+        <label>Choose date</label>
+        <input type="date" /><br /><br />
+        <!--File-->
+        <label>Upload file</label>
+        <input type="file" /><br /><br />
+        <!--Range-->
+        <label>Range</label>
+        <input type="range" /><br /><br />
+        <!--Range-->
+        <label>Hidden</label>
+        <input type="hidden" /><br /><br />
+        <!--Message-->
+        <label>Message</label>
+        <textarea cols="30" rows="10" style="color: rgb(39, 31, 34)" placeholder="Type your message here"></textarea
+        ><br /><br />
+        <label>Select</label>
+        <select size="5">
+          <optgroup label="Web">
+            <option value="backend1">HTML</option>
+            <option value="backend2">CSS</option>
+            <option>JS</option>
+            <option>React</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+            <option>React</option>
+          </optgroup>
+          <optgroup label="Web (2)">
+            <option value="backend1">HTML</option>
+            <option value="backend2">CSS</option>
+            <option>JS</option>
+            <option>React</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+            <option>React</option>
+          </optgroup></select
+        ><br /><br />
+      </form>
+    </fieldset>
+    <form>
+      <!--Submit-->
+      <input type="submit" value="Submit Form" />
+      <!--Reset-->
+      <input type="reset" value="Reset Form" disabled />
+    </form>
+  </body>
+</html>
